@@ -4,10 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
-    
+<body onresize="mudouTamanho()">
+    <section class="topo-upp">
+        <img src="imagens/icone-um.png" alt="" id="iupp">
+    </section>
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+    <menu id="itens">
+        <ul>
+            <li><a href="#op1">Home</a></li>
+            <li><a href="#op2">Projetos</a></li>
+            <li><a href="#op3">Especialidades</a></li>
+            <li><a href="#op4">Contato</a></li>
+        </ul>
+    </menu>
+    <section class="upp">
+        <h1>Upp</h1>
+        <p>A Upp é uma empresa desenvolvedora de sites, identidades visuais, logomarcas e design em geral. Fazemos de tudo para deixar sua marca única!</p>
+    </section>
+    <section class="projeto">
+        <h1>Projetos</h1> 
+        <p>Veja alguns de nossos projetos!</p> 
+    </section>
+    <div class="images">
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+    </div>
+    <h1>Especialidades</h1>
+    <section class="especialidades">
+        <div class="ico"><img src="imagens/logo-html.png" alt=""><p>Html</p></div>
+        <div class="ico"><img src="imagens/logo-css.png" alt=""><p>Css</p></div>
+        
+        <div class="ico"><img src="imagens/logo-js.png" alt=""><p>Html</p></div>
+        
+        <div class="ico"><img src="imagens/log-ps.png" alt=""><p>JavaScript</p></div>
+        
+        <div class="ico"><img src="imagens/logo-pr.png" alt=""><p>Photoshop</p></div>
+        
+        <div class="ico"><img src="imagens/logo-ai.png" alt=""><p>Ilustrator</p></div>
+        <p id="essas">Essas são algumas das nossas especialidades dominantes, tudo para deixar sua marca única.</p>
+    </section>
+    <section class="contato">
+        <h1>Contato</h1>
+        <form action="" method="post" autocomplete="on" id="finais">
+            <input type="text" name="nome" id="inome" required autocomplete="name" placeholder="Nome">
+            <br>
+            <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="E-mail">
+            <br>
+            <input type="text" name="msg" id="imsg" required placeholder="Mensagem">
+            <br>
+            <input type="submit" value="Enviar" id="send">
+        </form>
+    </section>  
+
+    <script>
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else{
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            } 
+        }
+    </script>
 </body>
 </html>
