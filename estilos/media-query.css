@@ -1,7 +1,171 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Berlin Sans FB Demi Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Berlin Sans FB Demi Bold'), url('../fontes/BRLNSDB.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Verdana Italic'), url('../fontes/VERDANAI.woff') format('woff');
+}
+
+:root{
+    --fonte-verdana: 'Verdana';
+    --fonte-berlin: 'Berlin Sans FB Demi Bold';
+}
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+/*
+    Typical Device Breakpoints
+    ---------------------------
+    Pequenas Telas: até 600px
+    Celular: de 600px até 768px
+    Tablet: 768px até 992px
+    Desktop: 992px até 1200px
+    Grandes Telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 1350px){
+    #burguer{
+        display: none;
+    }
+
+    menu{
+        display: none;
+    }
+
+    menu li{
+        display: none;
+    }
+
+    .topo-upp{ 
+        display: flex;
+        height: 60px;
+        width: 100vw;
+        justify-content: space-around;
+        border-bottom: 1px solid black;
+    }
+
+    #iupp{
+        margin-left: 50px;
+    }
+
+    .icons{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .icons a{
+        transition: transform 0.1s ease, box-shadow 0.1s ease;
+    }
+
+    .icons a:hover{
+        transform: scale(0.95); 
+        box-shadow: -10px 0px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+    }
+
+    .icons img{
+        display: inline-block;
+        margin: auto;
+        margin: 15px;
+    }
+
+    #finais input[type=text]{
+        width: 500px;
+    }
+
+    #finais input[type=email]{
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+
+    #burguer{
+        display: none;
+    }
+
+    menu{
+        display: none;
+    }
+
+    menu li{
+        display: none;
+    }
+
+    .upp p{
+        width: 40vw;
+    }
+
+    .topo-upp{ 
+        display: flex;
+        height: 60px;
+        width: 100vw;
+        justify-content: space-around;
+        border-bottom: 1px solid black;
+    }
+
+    #iupp{
+        margin-left: 50px;
+    }
+
+    .icons{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .icons a{
+        transition: transform 0.1s ease, box-shadow 0.1s ease;
+    }
+
+    .icons a:hover{
+        transform: scale(0.95); 
+        box-shadow: -10px 0px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+    }
+
+    .icons img{
+        display: inline-block;
+        margin: auto;
+        margin: 15px;
+    }
+
+    .projeto p{
+        text-align: center;
+    }
+
+    #essas{
+        text-align: center;
+        margin: auto;
+        width: 40vw;
+        margin-top: 40px;
+        margin-bottom: 55px;
+    }
+
+    #finais input[type=text]{
+        width: 500px;
+    }
+
+    #finais input[type=email]{
+        width: 500px;
+    }
+
+    #finais input[type=submit]{
+        font-size: 1.2em;
+    }
+
+    .contato h1{
+        font-size: 2.7em;
+    }
 }

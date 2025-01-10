@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web</title>
+    <title>Upp</title>
+    <link rel="shortcut icon" href="imagens/icone-um.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
@@ -11,52 +12,75 @@
 <body onresize="mudouTamanho()">
     <section class="topo-upp">
         <img src="imagens/icone-um.png" alt="" id="iupp">
+        <div class="icons">
+            <a href="#home"><img src="imagens/home.png" alt=""></a>
+            <a href="#news"><img src="imagens/news.png" alt=""></a>
+            <a href="#contrato"><img src="imagens/contract.png" alt=""></a>
+            <a href="#call"><img src="imagens/call.png" alt=""></a>
+        </div>
     </section>
     <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
     <menu id="itens">
         <ul>
-            <li><a href="#op1">Home</a></li>
-            <li><a href="#op2">Projetos</a></li>
-            <li><a href="#op3">Especialidades</a></li>
-            <li><a href="#op4">Contato</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">Projetos</a></li>
+            <li><a href="#contrato">Especialidades</a></li>
+            <li><a href="#call">Contato</a></li>
         </ul>
     </menu>
     <section class="upp">
-        <h1>Upp</h1>
+        <a name="home">
+            <h1>Upp</h1>
+        </a>
         <p>A Upp é uma empresa desenvolvedora de sites, identidades visuais, logomarcas e design em geral. Fazemos de tudo para deixar sua marca única!</p>
     </section>
     <section class="projeto">
-        <h1>Projetos</h1> 
+        <a name="news">
+            <h1>Projetos</h1>
+        </a> 
         <p>Veja alguns de nossos projetos!</p> 
     </section>
     <div class="images">
-        <div class="image"></div>
-        <div class="image"></div>
-        <div class="image"></div>
-        <div class="image"></div>
+        <div class="image"><img src="imagens/img-um.png" alt=""><a href="pagina001.html">
+            <p id="ump">Empresa LuminaMind</p>
+        </a></div>
+        <div class="image"><img src="imagens/img-dois.png" alt="" id="uni"><a href="pagina002.html">
+            <p id="doisp">Empresa EcoVital</p>
+        </a></div>
+        <div class="image"><img src="imagens/img-tres.png" alt=""><a href="pagina003.html">
+            <p id="tresp">Empresa GreenByte</p>
+        </a></div>
+        <div class="image"><img src="imagens/img-quatro.png" alt=""><a href="pagina004.html">
+            <p id="quatrop">Empresa Upp</p>
+        </a></div>
     </div>
-    <h1>Especialidades</h1>
+    <a name="contrato">
+        <h1>Especialidades</h1>
+    </a>
     <section class="especialidades">
         <div class="ico"><img src="imagens/logo-html.png" alt=""><p>Html</p></div>
         <div class="ico"><img src="imagens/logo-css.png" alt=""><p>Css</p></div>
         
-        <div class="ico"><img src="imagens/logo-js.png" alt=""><p>Html</p></div>
+        <div class="ico"><img src="imagens/logo-js.png" alt=""><p>JavaScript</p></div>
         
-        <div class="ico"><img src="imagens/log-ps.png" alt=""><p>JavaScript</p></div>
+        <div class="ico"><img src="imagens/log-ps.png" alt=""><p>Photoshop</p></div>
         
-        <div class="ico"><img src="imagens/logo-pr.png" alt=""><p>Photoshop</p></div>
+        <div class="ico"><img src="imagens/logo-pr.png" alt=""><p>Premiere</p></div>
         
         <div class="ico"><img src="imagens/logo-ai.png" alt=""><p>Ilustrator</p></div>
-        <p id="essas">Essas são algumas das nossas especialidades dominantes, tudo para deixar sua marca única.</p>
+        
     </section>
+    <p id="essas">Essas são algumas das nossas especialidades dominantes, tudo para deixar sua marca única.</p>
     <section class="contato">
-        <h1>Contato</h1>
+        <a name="call">
+            <h1>Contato</h1>
+        </a>
         <form action="" method="post" autocomplete="on" id="finais">
             <input type="text" name="nome" id="inome" required autocomplete="name" placeholder="Nome">
             <br>
             <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="E-mail">
             <br>
-            <input type="text" name="msg" id="imsg" required placeholder="Mensagem">
+            <input type="text" name="msg" id="imsg" required placeholder="Mensagem" minlength="50">
             <br>
             <input type="submit" value="Enviar" id="send">
         </form>
