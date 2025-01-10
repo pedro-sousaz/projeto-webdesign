@@ -142,7 +142,7 @@ menu a:hover{
     color: inherit;
     color: white;
     margin-left: 94px;
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
     transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
